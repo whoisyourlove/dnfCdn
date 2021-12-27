@@ -1,0 +1,2 @@
+发布后 通过这个访问
+https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Scripts

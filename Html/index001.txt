@@ -14,7 +14,7 @@
     <!--本地的css文件-->
     
     <!--toast插件-->
-    <link rel="stylesheet" href="/Scripts/Toast/css/toast.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Scripts/Toast/css/toast.css" />
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/4.1.1/animate.min.css" />
     
@@ -42,7 +42,7 @@
         }
 
         #page_1 {
-            background-image: url(../../Image/bg.png);
+            background-image: url(https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/bg.png);
         }
 
         .tipText {
@@ -111,13 +111,13 @@
                 </div>
                 <div class="row row-no-gutters">
                     <div class="col-6 col-xl-6">
-                        <img src="/Image/tech0.jpg" class="TechImg" />
+                        <img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/tech0.jpg" class="TechImg" />
                         <div class="tipText">
                             1.填入你的口令
                         </div>
                     </div>
                     <div class="col-6 col-xl-6">
-                        <img src="/Image/tech1.jpg" class="TechImg" />
+                        <img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/tech1.jpg" class="TechImg" />
                         <div class="tipText">
                             2.可能需要排队
                         </div>
@@ -126,13 +126,13 @@
                     <div class="col-12 col-xl-12" style="height:20px;"></div>
 
                     <div class="col-6 col-xl-6">
-                        <img src="/Image/tech2.jpg" class="TechImg" />
+                        <img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/tech2.jpg" class="TechImg" />
                         <div class="tipText">
                             3.手机QQ扫码登陆
                         </div>
                     </div>
                     <div class="col-6 col-xl-6">
-                        <img src="/Image/tech3.jpg" class="TechImg" />
+                        <img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/tech3.jpg" class="TechImg" />
                         <div class="tipText">
                             4.活动栏点击网吧图标领取
                         </div>
@@ -140,13 +140,13 @@
 
                     <div class="col-12 col-xl-12" style="height:20px;"></div>
                     <div class="col-6 col-xl-6">
-                        <img src="/Image/tech4.jpg" class="TechImg" />
+                        <img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/tech4.jpg" class="TechImg" />
                         <div class="tipText">
                             5.接收邮件
                         </div>
                     </div>
                     <div class="col-6 col-xl-6">
-                        <img src="/Image/tech5.jpg" class="TechImg" />
+                        <img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/tech5.jpg" class="TechImg" />
                         <div class="tipText">
                             6.消耗品栏 鼠标右键吃掉后 结束游戏
                         </div>
@@ -362,7 +362,7 @@
         </div>
     </div>
     
-    <audio src="../Scripts/ppmp3.mp3" id="myaudio" hidden="hidden"></audio>
+    <audio src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Scripts/ppmp3.mp3" id="myaudio" hidden="hidden"></audio>
 
 </div>
 
@@ -377,7 +377,7 @@
     <!--引用boostrap的js-->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <!--toast插件-->
-    <script src="/Scripts/Toast/js/toast.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Scripts/Toast/js/toast.js"></script>
     <script>
         function toast(title, body, t) {
             if (!t) {
@@ -400,7 +400,7 @@
         };
     </script>
     <!--本地的js文件-->
-    <script src="/Scripts/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Scripts/site.js" asp-append-version="true"></script>
     
     <script>
         //ie
@@ -425,6 +425,7 @@
                 document.body.innerHTML = "<h1>微信浏览器不支持某些功能，请更换其他浏览器再打开本网站，谢谢...</h1>";
             }
         }
+
     </script>
     <script>
         var app = Vue.createApp({
@@ -653,7 +654,7 @@
                                     app.gameTipList.unshift({ showLoading: false, txt: "请选择你所在的大区" });
                                     break;
                                 case "3-1":
-                                    app.gameTipList.unshift({ noPadding: true, txt: `<img src="/Image/erweima.jpg" style="width:100%;" />` });
+                                    app.gameTipList.unshift({ noPadding: true, txt: `<img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/erweima.jpg" style="width:100%;" />` });
                                     app.gameTipList.unshift({ showLoading: false, txt: "TP加载完毕后，如果没有自动弹出二维码,请手动点击下图二维码:" });
                                     break;
                                 case "4":
@@ -662,11 +663,11 @@
                                     toast("", "使用<h1 class='text-danger'>手机QQ</h1>扫码登陆",6000);
                                     break;
                                 case "4-1":
-                                    app.gameTipList.unshift({ noPadding: true, txt: `<strong><span class='text-primary'>所有道具均只能在网吧使用。疲劳药吃掉后再退出。网吧装备穿上身再退出</span></strong>。</br><img src="/Image/tip2.jpg" style="width:100%;" />` });
+                                    app.gameTipList.unshift({ noPadding: true, txt: `<strong><span class='text-primary'>所有道具均只能在网吧使用。疲劳药吃掉后再退出。网吧装备穿上身再退出</span></strong>。</br><img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/tip2.jpg" style="width:100%;" />` });
                                     app.gameTipList.unshift({ showLoading: true, txt: "登陆游戏中,可能需要两三分钟时间,请耐心等待..." });
                                     break;
                                 case "5":
-                                    app.gameTipList.unshift({ showLoading: false, txt: '<img src="/Image/tip.jpg" style="width:100%;" />' });
+                                    app.gameTipList.unshift({ showLoading: false, txt: '<img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/tip.jpg" style="width:100%;" />' });
                                     app.gameTipList.unshift({ noPadding: false, showLoading: true, txt: `如果您的浏览器屏蔽了鼠标右键，可按键盘上的Ctrl键代替...` });
                                     app.gameTipList.unshift({ noPadding: true, showLoading: true, txt: `游戏已经登陆成功，部分大区登录较慢，请<strong><span class='text-primary'>耐心等待</span></strong>游戏画面，大概几分钟.之后请自行选择角色领取...` });
                                     $('#closeAQModel').modal('show')
