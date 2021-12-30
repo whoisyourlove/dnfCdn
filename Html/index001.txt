@@ -81,10 +81,10 @@
                                 <a class="nav-link text-success" href="" data-toggle="modal" data-target="#exampleModal"><strong>两分钟视频演示</strong></a>
                             </li>
                             <li class="nav-item" v-show="hidePrice">
-                                <a class="nav-link text-success" href="https://www.6fak.com/product/8066FBF806C836CC" target="_blank"><strong>购买单次口令</strong></a>
+                                <a class="nav-link text-success" href="https://www.6fak.cn/product/8066FBF806C836CC" target="_blank"><strong>购买单次口令</strong></a>
                             </li>
                             <li class="nav-item" v-show="hidePrice">
-                                <a class="nav-link text-success" href="https://6fak.com/product/7A544F89866D2284" target="_blank"><strong>购买30次优惠口令</strong></a>
+                                <a class="nav-link text-success" href="https://www.6fak.cn/product/7A544F89866D2284" target="_blank"><strong>购买30次优惠口令</strong></a>
                             </li>
                             <li class="nav-item" v-show="hidePrice">
                                 <a class="nav-link text-success" href="tencent://message/?uin=2847046608" target="_blank"><strong>系统故障/联系售后QQ:2847046608</strong></a>
@@ -462,8 +462,8 @@
                     nowTerminalState: "",//当前终端机的状态,
                     onCloseReLoad: true,//当断开时，是否重新连接
                     playMusicOnUse: localStorage.music == "No" ? false : true, //匹配后自动播放音乐
-                    hidePrice: getQueryVariable("hp") ? false :true //隐藏价格
-                    
+                    hidePrice: getQueryVariable("hp") ? false : true //隐藏价格
+
                 }
             }, methods: {
                 //验证输入的口令按钮
@@ -519,7 +519,7 @@
                             code: "userMessage",
                             msg1: "2"
                         });
-                        setTimeout(function () { location.reload(); },1000);
+                        setTimeout(function () { location.reload(); }, 1000);
                     }
                 },
                 //根据code获取最近的历史消费记录
@@ -538,7 +538,7 @@
                     //风一样的勇士【木吉他指弹】
                     //风一样的勇士（国乐版）
                     //地下城与勇士DNF国服10周年庆BGM钢琴无缝串烧
-                    //神之都-根特 
+                    //神之都-根特
                     //赫顿玛尔
                     var ids = ["534676419", "1330249440", "862308698", "38019935", "1313793743"];
                     try {
@@ -551,8 +551,8 @@
 
                     $(".page").css("z-index", "100");
                     $("#" + n).css("z-index", "199");
-                    $("#"+o).css("z-index", "200");
-                    
+                    $("#" + o).css("z-index", "200");
+
                     $(".page").show();
 
                     animateCSS('#' + o, 'zoomOutDown').then((message) => {
@@ -579,7 +579,7 @@
                 } else {
                     window.socket = new WebSocket("ws://119.28.14.83:8203");
                 }
-                
+
                 socket.onopen = function () {
                     app.socketIsOk = true;
                     console.log("open了");
@@ -660,7 +660,7 @@
                                 case "4":
                                     app.gameTipList.unshift({ showLoading: false, txt: "<strong><span class='text-success'>暂不支持手机令牌（动态6位密码）</span>如果您开启了手机令牌，请在APP中暂时关闭,否则无法登录</strong>" });
                                     app.gameTipList.unshift({ showLoading: false, txt: "可使用<h1>手机QQ</h1>扫码登陆" });
-                                    toast("", "使用<h1 class='text-danger'>手机QQ</h1>扫码登陆",6000);
+                                    toast("", "使用<h1 class='text-danger'>手机QQ</h1>扫码登陆", 6000);
                                     break;
                                 case "4-1":
                                     app.gameTipList.unshift({ noPadding: true, txt: `<strong><span class='text-primary'>所有道具均只能在网吧使用。疲劳药吃掉后再退出。网吧装备穿上身再退出</span></strong>。</br><img src="https://cdn.jsdelivr.net/gh/whoisyourlove/dnfCdn/Image/tip2.jpg" style="width:100%;" />` });
@@ -773,7 +773,7 @@
                             alert(obj.msg1);
                             break
 
-                            
+
                     }
                 };
 
@@ -789,7 +789,7 @@
                             openSocket();
                         }
                     }, 3000);
-                    
+
                 };
                 socket.onerror = function (a) {
                     toast("提示", "连接出错了", 10000)
@@ -812,7 +812,7 @@
             app.lastTimeGetImage = new Date();
         }
 
-        
+
         $("#canvasScreen").unbind();
         //左键
         $("#canvasScreen").mousedown(function (e) {
@@ -825,7 +825,7 @@
             var x = parseInt(e.offsetX / $("#canvasScreen").width() * app.baseImageXy.x);
             var y = parseInt(e.offsetY / $("#canvasScreen").height() * app.baseImageXy.y);
 
-     
+
 
             sendSocket({
                 code: "userButtonClick",
@@ -929,7 +929,7 @@
                 var x = parseInt(e.offsetX / $("#canvasScreen").width() * app.baseImageXy.x);
                 var y = parseInt(e.offsetY / $("#canvasScreen").height() * app.baseImageXy.y);
 
-                nowMousexy = {x:x,y:y }
+                nowMousexy = { x: x, y: y }
                 if (new Date() - lastTime > 50) {
                     lastTime = new Date();
 
@@ -946,8 +946,8 @@
         localStorage.Agency = "";
         openSocket();
 
-        
-        
+
+
         function sendSocket(obj) {
             try {
                 socket.send(JSON.stringify(obj));
