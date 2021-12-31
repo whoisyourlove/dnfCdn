@@ -81,10 +81,10 @@
                                 <a class="nav-link text-success" href="" data-toggle="modal" data-target="#exampleModal"><strong>两分钟视频演示</strong></a>
                             </li>
                             <li class="nav-item" v-show="hidePrice">
-                                <a class="nav-link text-success" href="https://www.6fak.cn/product/8066FBF806C836CC" target="_blank"><strong>购买单次口令</strong></a>
+                                <a class="nav-link text-success" href="https://www.6fak.com/product/8066FBF806C836CC" target="_blank"><strong>购买单次口令</strong></a>
                             </li>
                             <li class="nav-item" v-show="hidePrice">
-                                <a class="nav-link text-success" href="https://www.6fak.cn/product/7A544F89866D2284" target="_blank"><strong>购买30次优惠口令</strong></a>
+                                <a class="nav-link text-success" href="https://www.6fak.com/product/7A544F89866D2284" target="_blank"><strong>购买30次优惠口令</strong></a>
                             </li>
                             <li class="nav-item" v-show="hidePrice">
                                 <a class="nav-link text-success" href="tencent://message/?uin=2847046608" target="_blank"><strong>系统故障/联系售后QQ:2847046608</strong></a>
