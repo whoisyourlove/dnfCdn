@@ -357,7 +357,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">暂不</button>
-                    <a href="http://a.dwz.win/?https://gamesafe.qq.com/safety-remove.shtml" onclick="$('#closeAQModel').modal('hide')" target="_blank" class="btn btn-primary">去准备解除</a>
+                    <a href="https://gamesafe.qq.com/safety-remove.shtml" rel="noreferrer" onclick="$('#closeAQModel').modal('hide')" target="_blank" class="btn btn-primary">去准备解除</a>
                 </div>
             </div>
         </div>
